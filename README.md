@@ -1,1 +1,1 @@
-# JavaScript-Project
+# Learning JavaScript

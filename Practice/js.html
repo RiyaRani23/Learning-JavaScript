@@ -9,72 +9,14 @@
 </head>
 <body>
     <button class="bag" onclick="
-       cartQuantity= cartQuantity+1;
-       document.querySelector('#cart-summary').innerText=`Your Bag has  ${cartQuantity} items`    
+        alert('Item has been added to your bag')
         ">Add to Bag</button><HR></HR>
-
-
-
     <button class="wish" onclick="
-       cartQuantity=cartQuantity-1;
-       document.querySelector('#cart-summary').innerText=`Your Bag has  ${cartQuantity} items`"
-    <i class="fa-solid fa-heart icon"></i>
+    alert('Item is succesfully added to your Wishlist')">
+        <i class="fa-solid fa-heart icon"></i>
         WISHLIST</button>
-
-
-        
-
-        <button class="bag" onclick="
-        cartQuantity=cartQuantity+2;
-        document.querySelector('#cart-summary').innerText=`Your Bag has  ${cartQuantity} items`
-
-
-
-        ">Add 1+1 Sale  Items</button><HR></HR>
-
-    <h1 id="cart-summary"></h1>
-
-
-
-
-
-
-        <p id="name-display"></p>
-
-
-        <!-- this is javascript -->
  <script>
-    let cartQuantity=0;
-    document.querySelector('#cart-summary').innerText=`Your Bag has  ${cartQuantity} items`
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const myName ='Riya Rani';
- 
-document.querySelector('#name-display')
-.innertext=myName;
-  let total=0;
-  const gstPercentage=18;
-  let bag_real= 2000;
-  let bag_price=bag_real+25;
-  total=bag_price+(gstPercentage + 100)/100;
-
- console.log(total);
- console.log(eval('2+3+5*6-35'));
-
+    // alert('WEICOME');
  </script>
 </body>
 </html>
