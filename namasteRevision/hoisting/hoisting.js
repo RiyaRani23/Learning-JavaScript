@@ -18,6 +18,7 @@ var sayHi = () => {
     return "Hi there!";
 };
 
+
 // Variable hoisting with var
 console.log(message); // Output: undefined
 var message = "This is a hoisted variable.";
