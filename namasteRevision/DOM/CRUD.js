@@ -36,3 +36,13 @@ ulElement.prepend(list3);
 
 // list2.before(list4); // Insert before list2
 ulElement.children[1].after(list4); // Insert after list2
+
+const arr = ["Banana", "Pineapple", "Strawberry"];
+
+const unorderElement = document.getElementById("listing");
+
+for(let fruit of arr){
+    const newlist = document.createElement('li');
+    newlist.textContent = fruit;
+    unorderElement.append(newlist);
+}
