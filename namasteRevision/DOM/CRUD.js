@@ -37,12 +37,21 @@ ulElement.prepend(list3);
 // list2.before(list4); // Insert before list2
 ulElement.children[1].after(list4); // Insert after list2
 
+
+// Using loop to create and append list items
 const arr = ["Banana", "Pineapple", "Strawberry"];
 
 const unorderElement = document.getElementById("listing");
+const fragment = document.createDocumentFragment();
 
 for(let fruit of arr){
     const newlist = document.createElement('li');
     newlist.textContent = fruit;
-    unorderElement.append(newlist);
+    // unorderElement.append(newlist);
+    fragment.append(newlist);
 }
+
+unorderElement.append(fragment);
+
+const s1 = document.getElementById("sample1");
+s1.remove(); // Remove the element with id "sample1"
