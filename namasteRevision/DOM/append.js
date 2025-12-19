@@ -54,4 +54,4 @@ for(let fruit of arr){
 unorderElement.append(fragment);
 
 const s1 = document.getElementById("sample1");
-s1.remove(); // Remove the element with id "sample1"
+s1.remove();  // Remove the element with id "sample1"
