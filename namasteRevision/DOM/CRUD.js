@@ -17,3 +17,22 @@ newElement2.classList.add('heading2'); // Add multiple classes
 newElement2.classList.add('heading3'); 
 
 element.before(newElement2);
+
+// Create and append list items
+
+const list = document.createElement('li');
+list.textContent = "Mango";
+const list2 = document.createElement('li');
+list2.textContent = "Apple";
+const list3 = document.createElement('li');
+list3.textContent = "Orange";
+const list4 = document.createElement('li');
+list4.textContent = "Grapes";
+
+const ulElement = document.getElementById("listing");
+ulElement.append(list);
+ulElement.append(list2);
+ulElement.prepend(list3); 
+
+// list2.before(list4); // Insert before list2
+ulElement.children[1].after(list4); // Insert after list2
